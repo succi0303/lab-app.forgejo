@@ -1,7 +1,6 @@
 networks:
   forgejo:
     external: false
-
 services:
   server:
     image: codeberg.org/forgejo/forgejo:11
@@ -17,26 +16,5 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
-      - '3000:3000'
-      - '222:22'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-^G Help         ^O Write Out    ^W Where Is     ^K Cut          ^T Execute      ^C Location     M-U Undo        M-A Set Mark    M-] To Bracket
-^X Exit         ^R Read File    ^\ Replace      ^U Paste        ^J Justify      ^/ Go To Line   M-E Redo        M-6 Copy        ^Q Where Was
+      - 3000:3000
+      - 222:22
